@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en-gb" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-gb" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-gb" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en-gb" class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109587501-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-109587501-2');
+		</script>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Practical Web Inclusion &amp; Accessibility, a book by Ashley Firth</title>
+		<meta name="description" content="Practical Web Inclusion & Accessibility, a book by Ashley Firth" />
+		<meta name="keywords" content="book, accessibility, a11y, inlusion, inclusive, author, access, access needs" />
+		<meta name="author" content="Ashley Firth" />
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="img/favicons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||console.log("Please view this site in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-dot" viewBox="0 0 24 24">
+				<title>dot</title>
+				<path d="M11.5 9c-.69 0-1.28.244-1.768.732A2.41 2.41 0 0 0 9 11.5c0 .69.244 1.28.732 1.767A2.409 2.409 0 0 0 11.5 14c.69 0 1.28-.244 1.768-.733A2.408 2.408 0 0 0 14 11.5c0-.69-.244-1.28-.732-1.768A2.408 2.408 0 0 0 11.5 9z"/>
+			</symbol>
+			<symbol id="icon-cross" viewBox="0 0 24 24">
+				<title>cross</title>
+				<path d="M11.449 11.962l-5.1 5.099a.363.363 0 1 0 .513.512L12 12.436l5.137 5.137a.361.361 0 0 0 .513 0 .363.363 0 0 0 0-.512l-5.099-5.1 5.102-5.102a.363.363 0 1 0-.512-.513L12 11.487l-5.141-5.14a.363.363 0 0 0-.513.512l5.103 5.103z"/>
+			</symbol>
+			<symbol id="icon-arrowlong" viewBox="0 0 32 11">
+				<title>arrow-long</title>
+				<path d="M27.166.183a.619.619 0 0 0-.878 0 .619.619 0 0 0 0 .878l2.735 2.735H.768a.624.624 0 0 0 0 1.248h28.254L26.287 7.77a.619.619 0 0 0 0 .878.617.617 0 0 0 .441.183c.163 0 .32-.061.442-.183l3.796-3.796a.623.623 0 0 0-.005-.878L27.166.183z"/>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<title>close</title>
+				<path d="M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z"/>
+			</symbol>
+			<symbol id="icon-navup" viewBox="0 0 50 50">
+				<title>navup</title>
+				<path d="M20.259 28.211l5.07-5.03 5.075 5.034a.36.36 0 0 0 .51 0 .356.356 0 0 0 0-.506l-5.323-5.28a.404.404 0 0 0-.135-.084.364.364 0 0 0-.384.08l-5.324 5.28a.356.356 0 0 0 0 .506c.141.14.37.14.51 0z" />
+			</symbol>
+			<symbol id="icon-navdown" viewBox="0 0 50 50">
+				<title>navdown</title>
+				<path d="M20.259 22.43l5.07 5.03 5.075-5.034a.36.36 0 0 1 .51 0c.14.14.14.366 0 .506l-5.323 5.28a.404.404 0 0 1-.135.084.364.364 0 0 1-.384-.081l-5.324-5.28a.356.356 0 0 1 0-.505c.141-.14.37-.14.51 0z" />
+			</symbol>
+			<symbol id="icon-grid" viewBox="0 0 24 24">
+				<title>grid</title>
+				<path d="M8.982 8.982h5.988v5.988H8.982zM0 0h5.988v5.988H0zM8.982 17.965h5.988v5.988H8.982zM0 8.982h5.988v5.988H0zM0 17.965h5.988v5.988H0zM17.965 0h5.988v5.988h-5.988zM8.982 0h5.988v5.988H8.982zM17.965 8.982h5.988v5.988h-5.988zM17.965 17.965h5.988v5.988h-5.988z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="sections">
+				<header class="sections__header">
+					<h1 class="title ga-link">Practical Web Inclusion &amp; Accessibility</h1>
+					<p class="temp-hide">A new book, designed as a practical guide to access needs</p>
+				</header>
+
+				<!-- navigation down -->
+				<nav class="sections__nav">
+					<button class="sections__nav-item sections__nav-item--prev" tabindex="0">
+						<svg class="icon icon--navup"><use xlink:href="#icon-navup"></use></svg>
+						<span class="sr-only">Previous</span>
+					</button>
+					<button class="sections__nav-item sections__nav-item--next" tabindex="0">
+						<svg class="icon icon--navdown"><use xlink:href="#icon-navdown"></use></svg>
+						<span class="sr-only">Next</span>
+					</button>
+				</nav>
+
+				<!-- facts expander with toggles; content for each is in its section -->
+				<div class="facts">
+					<div class="facts__toggle">
+						<span class="facts__toggle-inner facts__toggle-inner--more">
+							<svg class="icon icon--dot"><use xlink:href="#icon-dot"></use></svg>
+							<a class="facts__toggle-text" href="#readmore">Read more</a>
+						</span>
+						<span class="facts__toggle-inner facts__toggle-inner--less">
+							<svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg>
+							<a class="facts__toggle-text" href="#readless">Read less</a>
+						</span>
+					</div>
+					<button class="button-contentclose">
+						<svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg> Close
+					</button>
+				</div>
+				<!-- sections -->
+				<section class="section section--current">
+					<div class="section__content">
+						<h2 class="section__title"><a href="https://www.amazon.co.uk/dp/1484254511/ref=cm_sw_em_r_mt_dp_U_.abEDb53ESADG" tabindex="0" class="ga-link">Out<span class="white">-</span>Now</a></h2>
+						<p class="section__description"><span class="section__description-inner">
+							This book will guide you through a broad range of access needs, the barriers users often face, and provide practical advice on how your sites can help rather than hinder. Going beyond advice tailored solely for developers, this book offers potential improvements for designers, developers, user experience professionals, QA and testers<span class="temp-hide">, so that everyone involved in building a website can benefit</span>.</span>
+						</p>
+					</div>
+					<div class="section__img">
+						<div class="section__img-inner" style="background-image: url(img/book-cover.jpg)"></div>
+					</div>
+					<div class="section__more">
+						<div class="section__more-inner section__more-inner--bg1">
+							<span class="section__more-text">Ready to read?</span>
+							<a href="https://www.amazon.co.uk/dp/1484254511/ref=cm_sw_em_r_mt_dp_U_.abEDb53ESADG" class="section__more-link sections__nav-item--next ga-link">
+								<span class="section__more-linktext">Buy Now</span>
+								<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="section__expander"></div>
+					<ul class="section__facts">
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Author</h3>
+							<span class="section__facts-detail">Ashley Firth</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Publisher</h3>
+							<span class="section__facts-detail">Apress</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Release date</h3>
+							<span class="section__facts-detail">7<sup>th</sup> December 2019</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Formats</h3>
+							<span class="section__facts-detail">Paperback, eBook</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">ISBN 10</h3>
+							<span class="section__facts-detail">1484254511</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">ISBN 13</h3>
+							<span class="section__facts-detail">978-1484254516</span>
+						</li>
+					</ul>
+				</section><!--/ section -->
+				<section class="section section">
+					<div class="section__content">
+						<h2 class="section__title">About</h2>
+						<p class="section__description"><span class="section__description-inner">
+							This book comes complete with practical examples you can use in your own sites and, for the first time in any web accessibility book, access needs experienced by those with mental health disorders and cognitive impairments are comprehensively covered. Applicable to projects old and new<span class="temp-hide">, <em>Practical Web Inclusion and Accessibility</em> gives you all the information you need to ensure that your sites are truly accessible for the modern, inclusive web</span>.</span>
+						</p>
+					</div>
+					<div class="section__img">
+						<div class="section__img-inner" style="background-image: url(img/cover-render.jpg)"></div>
+					</div>
+					<div class="section__more">
+						<div class="section__more-inner section__more-inner--bg1">
+							<span class="section__more-text">Ready to read?</span>
+							<a href="https://www.amazon.co.uk/dp/1484254511/ref=cm_sw_em_r_mt_dp_U_.abEDb53ESADG" class="section__more-link sections__nav-item--next ga-link">
+								<span class="section__more-linktext">Buy Now</span>
+								<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="section__expander"></div>
+					<ul class="section__facts">
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Practical examples:</h3>
+							<span class="section__facts-detail">8</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Available on:</h3>
+							<span class="section__facts-detail">Github &amp; this site!</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Chapters:</h3>
+							<ol>
+								<li>Introduction</li>
+								<li>Blindness</li>
+								<li>Low vision and Colour Blindness</li>
+								<li>Motor disabilities</li>
+								<li>Deafness and Hard of hearing</li>
+								<li>Cognitive impairments</li>
+								<li>Mental health</li>
+								<li>Imagery</li>
+								<li>Communication</li>
+								<li>New technologies</li>
+								<li>Tools and QA</li>
+								<li>Conclusion</li>
+							</ol>
+						</li>
+					</ul>
+				</section><!--/ section -->
+				<section class="section">
+					<div class="section__content">
+						<h2 class="section__title">Author</h2>
+						<p class="section__description"><span class="section__description-inner">
+							Ashley Firth is Head of Front-end Development and Accessibility at award-winning energy supplier Octopus Energy. He was shortlisted for 2018 Young Energy Professional of the Year for customer service, spoke at the Festival of Marketing about web accessibility, and was part of eConsultancy’s first ever Neurodiversity report.<span class="temp-hide"> He is a published writer for Web Designer Magazine and acts as a consultant to other companies to help them improve their accessibility.</span>
+						</span></p>
+					</div>
+					<div class="section__img">
+						<div class="section__img-inner" style="background-image: url(img/author.jpg)"></div>
+					</div>
+					<div class="section__more">
+						<div class="section__more-inner section__more-inner--bg2">
+							<span class="section__more-text">Want to know more?</span>
+							<a href="https://mrfirthy.me" target="_blank" class="section__more-link">
+								<span class="section__more-linktext">Ashley's site</span>
+								<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+							</a>
+						</div>
+					</div>
+					<div class="section__expander"></div>
+					<ul class="section__facts">
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">From</h3>
+							<span class="section__facts-detail">Southampton, UK</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Socials</h3>
+							<span class="section__facts-detail">@MrFirthy</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Speaking</h3>
+							<span class="section__facts-detail">Festival of Marketing 2018</span>
+						</li>
+						<li class="section__facts-item">
+							<h3 class="section__facts-title">Writing</h3>
+							<span class="section__facts-detail">Web Designer Magazine,<br/>eConsultancy</span>
+						</li>
+					</ul>
+				</section><!--/ section -->
+			</div><!--/ sections -->
+		</main>
+
+		<div class="browser-message">
+		    <div class="container-fluid--limit">
+		        <h2>Your browser is out of date</h2>
+		        <p>In order to provide you with the latest digital energy web services you need to use the latest and greatest web browsers.</p>
+		        <p><a href="https://browser-update.org/update-browser.html#18:browser-update.org">Update your browser</a> for a better web experience, here and all over the internet.</p>
+		    </div>
+		</div>
+
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

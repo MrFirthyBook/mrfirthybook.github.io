@@ -1,0 +1,24 @@
+/* -----------------------------------------------------------------------------
+ * Caption styling
+ * -------------------------------------------------------------------------- */
+
+video { width: 100%; }
+
+video::cue {
+	color: #1aefb9;
+}
+
+video::cue(b) {
+	color: #6e22ec;
+}
+
+.audio {
+	width: 100%;
+	height: 120px;
+}
+
+.audio::cue {
+	color: black;
+	background-color: white;
+	font-size: 20px;
+}

@@ -1,0 +1,20 @@
+/* -----------------------------------------------------------------------------
+ * Autocomplete styles
+ * -------------------------------------------------------------------------- */
+
+form {
+	margin-bottom: 24px;
+}
+
+input {
+	display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 16px 0 0;
+    font-size: 24px;
+}
+
+label {
+	display: block;
+	margin-top: 16px;
+}

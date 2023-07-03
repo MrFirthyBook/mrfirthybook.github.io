@@ -2,9 +2,9 @@
  * Variables
  * -------------------------------------------------------------------------- */
 :root {
-  --primary-color: #432E30;
+  --primary-color: #180048;
   --primary-color-light: #654f4f;
-  --accent-color: #FE6A6B;
+  --accent-color: #E2896C;
   --accent-color-light: #FFE4E4;
   --accent-color-dark: #B94B4C;
   --white-color: #FAFBFC;
@@ -32,7 +32,7 @@ p {
 
 a, a:hover {
   text-decoration: none;
-  color: #432E30;
+  color: #180048;
   color: var(--primary-color);
 }
 
@@ -51,7 +51,7 @@ img {
 }
 
 .section__title {
-  color: #432E30;
+  color: #180048;
   color: var(--primary-color);
 }
 
@@ -99,7 +99,7 @@ img {
  * -------------------------------------------------------------------------- */
 .button--primary {
   padding: 10px 22px;
-  background-color: #FE6A6B;
+  background-color: #E2896C;
   background-color: var(--accent-color);
   color: black;
   position: relative;
@@ -133,15 +133,15 @@ img {
 
 .button--secondary {
   padding: 10px 22px;
-  border: 2px solid #432E30;
+  border: 2px solid #180048;
   border: 2px solid var(--primary-color);
   transition: all 0.5s ease-out;
 }
 
 .button--secondary:hover {
-  border-color: #FE6A6B;
+  border-color: #E2896C;
   border-color: var(--accent-color);
-  color: #FE6A6B;
+  color: #E2896C;
   color: var(--accent-color);
 }
 
@@ -154,17 +154,17 @@ img {
 }
 
 .link:hover {
-  color: #FE6A6B;
+  color: #E2896C;
   color: var(--accent-color);
 }
 
 .link--dark {
-  color: #432E30;
+  color: #180048;
   color: var(--primary-color);
 }
 
 .link--light {
-  color: #FE6A6B;
+  color: #E2896C;
   color: var(--accent-color);
 }
 
@@ -191,7 +191,7 @@ img {
   height: 2px;
   width: 18px;
   border-radius: 2px;
-  background: #432E30;
+  background: #180048;
   background: var(--primary-color);
   display: block;
   cursor: pointer;
@@ -279,7 +279,7 @@ img {
 
 footer {
   text-align: center;
-  background-color: #432E30;
+  background-color: #180048;
   background-color: var(--primary-color);
   padding: 2rem;
   color: white;
@@ -317,7 +317,7 @@ nav {
 
 .hero__title {
   font-weight: 900;
-  color: #432E30;
+  color: #180048;
   color: var(--primary-color);
 }
 
@@ -403,6 +403,7 @@ nav {
 
 .checklist__detail li {
   margin-bottom: 8px;
+  font-size: 1.4rem;
 }
 
 .checklist__title {

@@ -11,7 +11,7 @@
 	  gtag('config', 'UA-109587501-2');
 	</script>
 
-	<title>WebVTT - Practical Web Inclusion and Accessibility</title>
+	<title>WebVTT - Practical Web Accessibility</title>
 	<meta charset="UTF-8">
 	<meta name="robots" content="noindex" />
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
@@ -51,11 +51,29 @@
 		<a href="vtt/video.vtt" class="button--primary">Download sample WebVTT file</a>
 		<p>As you will see from the file above, we've used a couple of the rules mentioned in the chapter as examples of how you can alter the display and aesthetics of captions - there is a mixture of <code>align</code>, <code>position</code>, <code>line</code>, and <code>Bold (&lt;b&gt;)</code> in the video below, all controlled through the <code>.vtt</code> file.</p>
 
-		<video controls="true" poster="img/poster.jpg">
+		<video controls poster="img/poster.jpg">
 			<source src="media/video.mp4" type="video/mp4">
 			<source src="media/video.webm" type="video/webm">
 			<track label="English" kind="subtitles" srclang="en" src="vtt/video.vtt" default />
 		</video>
+
+		<h3>Transcript</h3>
+		<p>Run run run as fast as you can</p>
+		<p>You can't catch me</p>
+		<p>I'm the gingerbread man</p>
+		<p><strong>You are a monster</strong></p>
+		<p>I'm not the monster here. <i>You are</i>.</p>
+		<p>You and the rest of that fairy tale trash</p>
+		<p>poisoning my perfect world</p>
+		<p>Now, tell me! Where are the others?</p>
+		<p><strong>Eat me! [spits milk]</strong></p>
+		<p>I've tried to be fair to you creatures.</p>
+		<p>Now my patience has reached its end!</p>
+		<p>Tell me or I'll...</p>
+		<p><strong>No, no, not the buttons</strong></p>
+		<p><strong>Not my gumdrop buttons</strong></p>
+		<p>All right then. Who's hiding them?</p>
+
 
 		<p><strong>Note:</strong> IE will completely ignore WebVTT files unless you define the MIME type. This can easily be done by adding an <code>.htaccess</code> file to an appropriate directory and adding <code>AddType text/vtt .vtt</code>.</p>
 
@@ -72,6 +90,23 @@
 			<track label="English" kind="subtitles" srclang="en" src="vtt/audio.vtt" default />
 		</video>
 
+		<h4>Transcript</h4>
+		<p>Run run run as fast as you can</p>
+		<p>You can't catch me</p>
+		<p>I'm the gingerbread man</p>
+		<p><strong>You are a monster</strong></p>
+		<p>I'm not the monster here. <i>You are</i>.</p>
+		<p>You and the rest of that fairy tale trash</p>
+		<p>poisoning my perfect world</p>
+		<p>Now, tell me! Where are the others?</p>
+		<p><strong>Eat me! [spits milk]</strong></p>
+		<p>I've tried to be fair to you creatures.</p>
+		<p>Now my patience has reached its end!</p>
+		<p>Tell me or I'll...</p>
+		<p><strong>No, no, not the buttons</strong></p>
+		<p><strong>Not my gumdrop buttons</strong></p>
+		<p>All right then. Who's hiding them?</p>
+
 		<hr>
 
 		<h3>Audio using <code>&lt;video&gt;</code> (background poster)</h3>
@@ -81,13 +116,30 @@
 			<track label="English" kind="subtitles" srclang="en" src="vtt/audio.vtt" default />
 		</video>
 
+		<h4>Transcript</h4>
+		<p>Run run run as fast as you can</p>
+		<p>You can't catch me</p>
+		<p>I'm the gingerbread man</p>
+		<p><strong>You are a monster</strong></p>
+		<p>I'm not the monster here. <i>You are</i>.</p>
+		<p>You and the rest of that fairy tale trash</p>
+		<p>poisoning my perfect world</p>
+		<p>Now, tell me! Where are the others?</p>
+		<p><strong>Eat me! [spits milk]</strong></p>
+		<p>I've tried to be fair to you creatures.</p>
+		<p>Now my patience has reached its end!</p>
+		<p>Tell me or I'll...</p>
+		<p><strong>No, no, not the buttons</strong></p>
+		<p><strong>Not my gumdrop buttons</strong></p>
+		<p>All right then. Who's hiding them?</p>
+
 		<hr>
 	</section>
 </main>
 
 <footer>
 	<p>Copyright Joe's website emporium.</p>
-	<p>Part of a series of examples for the book 'Practical Web Inclusion and Accessibility' by Ashley Firth</p>
+	<p>Part of a series of examples for the book 'Practical Web Accessibility' by Ashley Firth</p>
 </footer>
 
 <script src="js/app.js"></script>

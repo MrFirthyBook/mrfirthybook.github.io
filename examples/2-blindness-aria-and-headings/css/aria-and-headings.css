@@ -2,9 +2,9 @@
  * Variables
  * -------------------------------------------------------------------------- */
 :root {
-  --primary-color: #432E30;
+  --primary-color: #180048;
   --primary-color-light: #654f4f;
-  --accent-color: #FE6A6B;
+  --accent-color: #E2896C;
   --accent-color-light: #FFE4E4;
   --accent-color-dark: #B94B4C;
   --white-color: #FAFBFC;
@@ -37,14 +37,14 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 8.4px;
   cursor: pointer;
   animate: 0.2s;
-  background: #FE6A6B;
+  background: #E2896C;
   background: var(--accent-color);
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  border: 2px solid #432E30;
+  border: 2px solid #180048;
   border: 2px solid var(--primary-color);
   height: 36px;
   width: 16px;
@@ -56,7 +56,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #FE6A6B;
+  background: #E2896C;
   background: var(--accent-color);
 }
 
@@ -66,7 +66,7 @@ input[type=range]::-moz-range-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #FE6A6B;
+  background: #E2896C;
   background: var(--accent-color);
   border-radius: 1.3px;
   border: 0.2px solid #010101;
@@ -94,14 +94,14 @@ input[type=range]::-ms-track {
 }
 
 input[type=range]::-ms-fill-lower {
-  background: #FE6A6B;
+  background: #E2896C;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 
 input[type=range]::-ms-fill-upper {
-  background: #FE6A6B;
+  background: #E2896C;
   background: var(--accent-color);
   border: 0.2px solid #010101;
   border-radius: 2.6px;
@@ -119,12 +119,12 @@ input[type=range]::-ms-thumb {
 }
 
 input[type=range]:focus::-ms-fill-lower {
-  background: #FE6A6B;
+  background: #E2896C;
   background: var(--accent-color);
 }
 
 input[type=range]:focus::-ms-fill-upper {
-  background: #FE6A6B;
+  background: #E2896C;
   background: var(--accent-color);
 }
 
@@ -139,13 +139,13 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-top: -2px;
 	text-align: center; 
 	background: #ffffff;
-  border: 2px solid #432E30;
+  border: 2px solid #180048;
 	border: 2px solid var(--primary-color);
 }
 
 [aria-checked="true"]::before {
 	color: #ffffff;
-  background: #FE6A6B;
+  background: #E2896C;
 	background: var(--accent-color);
     content: "X";
 }

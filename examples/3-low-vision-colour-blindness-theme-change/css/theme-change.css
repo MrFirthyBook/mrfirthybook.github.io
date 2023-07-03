@@ -110,7 +110,7 @@ body.invert {
 }
 
 .switch-input:checked + .switch-button {
-  background: #FE6A6B;
+  background: #E2896C;
 }
 
 .switch-input + .switch-button:after, .switch-input + .switch-button:before {

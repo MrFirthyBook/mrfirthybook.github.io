@@ -1,6 +1,6 @@
 # learna11y.com
 
-Codebase for the website to advertise the book "Practical Web Inclusion & Accessibility".
+Codebase for the website to advertise the book "Practical Web Accessibility".
 
 Points to the following domains:
 - learna11y.com

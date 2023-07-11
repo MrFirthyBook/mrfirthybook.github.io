@@ -30,8 +30,10 @@ p {
   color: #4A4A4A;
 }
 
-a, a:hover {
-  text-decoration: none;
+a,
+a:hover,
+a:focus {
+  text-decoration: underline;
   color: #180048;
   color: var(--primary-color);
 }

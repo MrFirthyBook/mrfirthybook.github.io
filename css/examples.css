@@ -1,4 +1,21 @@
 /* -----------------------------------------------------------------------------
+ * Variables
+ * -------------------------------------------------------------------------- */
+:root {
+  --primary-color: #180048;
+  --primary-color-light: #654f4f;
+  --accent-color: #E2896C;
+  --accent-color-light: #FFE4E4;
+  --accent-color-dark: #B94B4C;
+  --white-color: #FAFBFC;
+  --light-gray-color: #C6CBD1;
+  --medium-gray-color: #959DA5;
+  --dark-gray-color: #444D56;
+  --bg-color: #F8F8FA;
+  --code-bg-color: #F0E8E8;
+}
+
+/* -----------------------------------------------------------------------------
  * Main styles
  * -------------------------------------------------------------------------- */
 
@@ -14,7 +31,8 @@
 
 .banner .title {
     font-size: 4.0em;
-    color: #d16b3f;
+    color: #180048;
+    color: var(--primary-color);
 }
 
 .title {
@@ -35,7 +53,7 @@
 }
 
 
-a { color: #7b7b7b; }
+a { color: #333; }
 
 a:hover,
 a:focus {
@@ -87,14 +105,15 @@ p {
     right: 5px;
     bottom: 5px;
     left: 5px;
-    border: 1px solid rgba(74, 74, 74, 0.075);
+    border: 1px solid rgba(68, 77, 86, 0.2);
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
 
 .grid__item:hover::before,
 .grid__item:focus::before {
-    border: 3px solid rgba(254, 106, 107, 0.5);
+    border: 3px solid #180048;
+    border: 3px solid var(--primary-color);
 }
 
 .grid__item--loading.grid__item::before {

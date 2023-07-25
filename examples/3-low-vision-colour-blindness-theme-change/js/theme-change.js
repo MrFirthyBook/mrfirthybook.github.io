@@ -10,8 +10,18 @@ $('[data-action="aria-switch"]').on('keydown', function(e) {
 
 // THEME SWITCH
 // Toggle a body class that will change
-var el = document.querySelector('.switch-button');
+var localStorage = window.localStorage,
+    themeSwitcher = document.querySelector('.switch-button');
 
-el.onclick = function() {
-	document.body.classList.toggle('invert');
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('ThemeSwitch') != 'light') {
+    document.body.classList.add('night');
+    localStorage.setItem("ThemeSwitch", "night");
+    document.getElementById("theme-switch").checked = true;
 }
+
+themeSwitcher.onclick = function() {
+	document.body.classList.toggle('night');
+    var status = document.body.classList.contains("night") ? "night" : "light";
+    localStorage.setItem("ThemeSwitch", status);
+}
+

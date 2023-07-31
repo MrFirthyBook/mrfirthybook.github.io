@@ -104,37 +104,20 @@ img {
  * Buttons
  * -------------------------------------------------------------------------- */
 .button--primary {
+  display: inline-block;
   padding: 10px 22px;
-  background-color: #E2896C;
-  background-color: var(--accent-color);
-  color: black;
-  position: relative;
+  background-color: #180048;
+  background-color: var(--primary-color);
+  color: white;
   text-decoration: none;
-  border: 0;
+  border-radius: .8rem;
   transition: all .3s ease-out;
 }
 
-.button--primary:after {
-  position: absolute;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background-color: #FFE4E4;
-  background-color: var(--accent-color-light);
-  right: -0.4rem;
-  top: -0.4rem;
-  transition: all 0.3s ease-out;
-}
-
-.button--primary:hover {
-  text-shadow: 0px 1px 1px #B94B4C;
-  text-shadow: 0px 1px 1px var(--accent-color-dark);
+.button--primary:hover,
+.button--primary:focus {
   color: white;
-  transform: translate3D(0, -3px, 0);
-}
-
-.button--primary:hover::after {
-  transform: rotate(90deg);
+  background-color: #52368C;
 }
 
 .button--secondary {

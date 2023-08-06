@@ -1,7 +1,7 @@
 WEBVTT
 
-00:00:00.500 --> 00:00:03.500
-Run run run as fast as you can
+00:00:00.500 --> 00:00:03.500 line:70% align:left
+<v.first.loud Walter>Run run run as fast as you can
 
 00:00:03.600 --> 00:00:05.000
 You can't catch me
@@ -28,7 +28,7 @@ Now, tell me! Where are the others?
 <b>Eat me! [spits milk]</b>
 
 00:00:19.500 --> 00:00:22.300
-I've tried to be fair to you creatures.
+<c>I've</c> <00:00:19.500><c>tried to</c> <00:00:20.000><c>be fair</c> <00:00:21.000><c>to</c> <00:00:21.750><c>you</c> <00:00:22.250> <c>creatures</c>
 
 00:00:22.400 --> 00:00:24.700
 Now my patience has reached its end!

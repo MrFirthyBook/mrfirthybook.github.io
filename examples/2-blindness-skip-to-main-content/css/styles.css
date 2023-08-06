@@ -119,6 +119,14 @@ img {
   transition: all .3s ease-out;
 }
 
+@media screen and (max-width: 600px) {
+  .button--primary {
+    display: block;
+    padding: 24px 8px;
+    text-align: center;
+  }
+}
+
 .button--primary:hover,
 .button--primary:focus {
   color: white;

@@ -415,7 +415,7 @@ nav {
 
 @media (max-width: 750px) {
   .hero__terminal {
-    width: 70%;
+    width: 96%;
   }
   .tab__container > ul {
     right: auto;

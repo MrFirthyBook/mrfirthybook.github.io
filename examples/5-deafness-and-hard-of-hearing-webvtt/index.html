@@ -58,22 +58,34 @@
 			<track label="English" kind="subtitles" srclang="en" src="vtt/video.vtt" default />
 		</video>
 
-		<h3>Transcript</h3>
-		<p>Run run run as fast as you can</p>
-		<p>You can't catch me</p>
-		<p>I'm the gingerbread man</p>
-		<p><strong>You are a monster</strong></p>
-		<p>I'm not the monster here. <i>You are</i>.</p>
-		<p>You and the rest of that fairy tale trash</p>
-		<p>poisoning my perfect world</p>
-		<p>Now, tell me! Where are the others?</p>
-		<p><strong>Eat me! [spits milk]</strong></p>
-		<p>I've tried to be fair to you creatures.</p>
-		<p>Now my patience has reached its end!</p>
-		<p>Tell me or I'll...</p>
-		<p><strong>No, no, not the buttons</strong></p>
-		<p><strong>Not my gumdrop buttons</strong></p>
-		<p>All right then. Who's hiding them?</p>
+		<div class="disclosure-widget">
+			<button class="trigger" aria-expanded="false" aria-controls="panel">
+				<svg width="12" height="8" aria-hidden="true" viewBox="-2 -2 14 12">
+					<g fill="none" transform="rotate(-90 6 4)">
+						<path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z" />
+						<path d="M-6-8h24v24h-24z" />
+					</g>
+				</svg>
+				<h3>Transcript</h3>
+			</button>
+			<div class="panel" id="panel">
+				<p>Run run run as fast as you can</p>
+				<p>You can't catch me</p>
+				<p>I'm the gingerbread man</p>
+				<p><strong>You are a monster</strong></p>
+				<p>I'm not the monster here. <i>You are</i>.</p>
+				<p>You and the rest of that fairy tale trash</p>
+				<p>poisoning my perfect world</p>
+				<p>Now, tell me! Where are the others?</p>
+				<p><strong>Eat me! [spits milk]</strong></p>
+				<p>I've tried to be fair to you creatures.</p>
+				<p>Now my patience has reached its end!</p>
+				<p>Tell me or I'll...</p>
+				<p><strong>No, no, not the buttons</strong></p>
+				<p><strong>Not my gumdrop buttons</strong></p>
+				<p>All right then. Who's hiding them?</p>
+			</div>
+		</div>
 
 
 		<p><strong>Note:</strong> IE will completely ignore WebVTT files unless you define the MIME type. This can easily be done by adding an <code>.htaccess</code> file to an appropriate directory and adding <code>AddType text/vtt .vtt</code>.</p>
@@ -91,22 +103,34 @@
 			<track label="English" kind="subtitles" srclang="en" src="vtt/audio.vtt" default />
 		</video>
 
-		<h4>Transcript</h4>
-		<p>Run run run as fast as you can</p>
-		<p>You can't catch me</p>
-		<p>I'm the gingerbread man</p>
-		<p><strong>You are a monster</strong></p>
-		<p>I'm not the monster here. <i>You are</i>.</p>
-		<p>You and the rest of that fairy tale trash</p>
-		<p>poisoning my perfect world</p>
-		<p>Now, tell me! Where are the others?</p>
-		<p><strong>Eat me! [spits milk]</strong></p>
-		<p>I've tried to be fair to you creatures.</p>
-		<p>Now my patience has reached its end!</p>
-		<p>Tell me or I'll...</p>
-		<p><strong>No, no, not the buttons</strong></p>
-		<p><strong>Not my gumdrop buttons</strong></p>
-		<p>All right then. Who's hiding them?</p>
+		<div class="disclosure-widget">
+			<button class="trigger" aria-expanded="false" aria-controls="panel">
+				<svg width="12" height="8" aria-hidden="true" viewBox="-2 -2 14 12">
+					<g fill="none" transform="rotate(-90 6 4)">
+						<path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z" />
+						<path d="M-6-8h24v24h-24z" />
+					</g>
+				</svg>
+				<h4>Transcript</h4>
+			</button>
+			<div class="panel" id="panel">
+				<p>Run run run as fast as you can</p>
+				<p>You can't catch me</p>
+				<p>I'm the gingerbread man</p>
+				<p><strong>You are a monster</strong></p>
+				<p>I'm not the monster here. <i>You are</i>.</p>
+				<p>You and the rest of that fairy tale trash</p>
+				<p>poisoning my perfect world</p>
+				<p>Now, tell me! Where are the others?</p>
+				<p><strong>Eat me! [spits milk]</strong></p>
+				<p>I've tried to be fair to you creatures.</p>
+				<p>Now my patience has reached its end!</p>
+				<p>Tell me or I'll...</p>
+				<p><strong>No, no, not the buttons</strong></p>
+				<p><strong>Not my gumdrop buttons</strong></p>
+				<p>All right then. Who's hiding them?</p>
+			</div>
+		</div>
 
 		<hr>
 
@@ -144,5 +168,6 @@
 </footer>
 
 <script src="js/app.js"></script>
+<script src="js/disclosure.js"></script>
 </body>
 </html>

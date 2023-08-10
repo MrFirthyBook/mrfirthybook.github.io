@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------------- */
 body.night {
 	/* For most modern browsers, filter can be used to immediately invert all colours */
-	filter: invert(100%);
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 /* Explicitly defined changes in colour for the switched theme, to accommodate only for Internet Explorer */

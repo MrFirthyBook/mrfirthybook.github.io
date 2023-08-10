@@ -13,7 +13,12 @@ $('[data-action="aria-switch"]').on('keydown', function(e) {
 var localStorage = window.localStorage,
     themeSwitcher = document.querySelector('.switch-button');
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('ThemeSwitch') != 'light') {
+if (
+    (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches &&
+        localStorage.getItem('ThemeSwitch') != 'light') ||
+        localStorage.getItem('ThemeSwitch') != 'light'
+    ) {
     document.body.classList.add('night');
     localStorage.setItem("ThemeSwitch", "night");
     document.getElementById("theme-switch").checked = true;

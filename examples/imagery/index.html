@@ -96,26 +96,41 @@
 			<p>The simplest approach, with an <code>alt</code> attribute added so the contents can be described to users using assistive technologies.</p>
 			<pre class="nohighlight code">
 			    <code>
-			    	&lt;img src="assets/img.png" alt="Warning"&gt;
+&lt;img src="assets/img.png" alt="Warning"&gt;
 			    </code>
 			</pre>
-			<img src="assets/img.png" alt="Warning" width="100">
+			<img src="assets/img.png" alt="There was a problem with your upload" width="100">
+
+			<h3><code>&lt;picture&gt;</code> tag:</h3>
+			<p>The <code>&lt;picture&gt;</code> tag allows you to supply multiple <code>&lt;source&gt;</code> tags for an image that will be used when certain criteria are fulfilled, with a standard <code>&lt;img&gt;</code> tag you&#39;re used to seeing as the fallback when none apply.</p>
+			<pre class="nohighlight code">
+			    <code>
+&lt;picture&gt;
+  &lt;source srcset="night.jpg" media="(prefers-color-scheme: dark)"&gt;
+  &lt;img src="day.jpg"&gt;
+&lt;/picture&gt;
+			    </code>
+			</pre>
+			<picture>
+				<source srcset="night.jpg" media="(prefers-color-scheme: dark)">
+				<img src="day.jpg">
+			</picture>
 
 			<h3>Sprite icon:</h3>
 			<p>A few examples of images being displayed from the same image sprite, as well as descriptions for each of the icons inside an element that is hidden visually but available to a screen reader:</p>
 			<pre class="nohighlight code">
 			    <code>
-			    	&lt;div class="sprite sprite--success"&gt;
-						&lt;span class="sr-only"&gt;Action successful&lt;/span&gt;
-					&lt;/div&gt;
+&lt;div class="sprite sprite--success"&gt;
+  &lt;span class="sr-only"&gt;Action successful&lt;/span&gt;
+&lt;/div&gt;
 			    </code>
 			</pre>
 
 			<pre class="nohighlight code">
 			    <code>
-			    	&lt;div class="sprite sprite--warning"&gt;
-						&lt;span class="sr-only"&gt;An error occurred&lt;/span&gt;
-					&lt;/div&gt;
+&lt;div class="sprite sprite--warning"&gt;
+  &lt;span class="sr-only"&gt;An error occurred&lt;/span&gt;
+&lt;/div&gt;
 			    </code>
 			</pre>
 			<div class="sprite sprite--success">
@@ -126,15 +141,12 @@
 			</div>
 
 			<h3>Icon font icon:</h3>
-			<p>This example uses the font awesome icon font, now using SVG. We have added a <code>title</code> attribute to showcase the additions that the library makes to optimise their icons, but also the <code>aria-hidden="true"</code> property on the section icon to showcase how a purely decorative icon can be hidden</p>
+			<p>This example uses the FontAwesome icon font, now using SVG. We have added a <code>title</code> attribute to showcase the additions that the library makes to optimise their icons. Doing this ensures that FontAwesome creates a visually hidden element with the contents of the <code>title</code> attribute automatically, as well as applying the <code>aria-hidden="true"</code> attribute to the icon itself.</p>
 			<pre class="nohighlight code">
 			    <code>
-			    	&lt;i aria-hidden="true" class="fas fa-car" title="Time to destination by car"&gt;&lt;/i&gt;
-			    </code>
-			</pre>
-			<pre class="nohighlight code">
-			    <code>
-			    	&lt;span class="sr-only"&gt;Time to destination by car:&lt;/span&gt;
+&lt;i aria-hidden="true" class="fa-solid fa-car" title="Time to destination by car"&gt;&lt;/i&gt;
+
+&lt;span class="sr-only"&gt;Time to destination by car:&lt;/span&gt;
 			    </code>
 			</pre>
 			<i class="fas fa-car" title="Time to destination by car"></i>
@@ -151,19 +163,30 @@
 			</ul>
 			<pre class="nohighlight code">
 			    <code>
-			    	&lt;svg aria-labelledby="bolt-title" aria-describedby="bolt-desc" role=“img”&gt;
-					    &lt;title id=“bolt-title”&gt;Apple logo&lt;/title&gt;
-					    &lt;desc id=“bolt-desc”&gt;A silhouette of an apple with a bite taken out of it&lt;/desc&gt;
-					    …
-					&lt;/svg&gt;
+&lt;svg aria-labelledby="bolt-title" aria-describedby="bolt-desc" role=“img”&gt;
+  &lt;title id=“bolt-title”&gt;Apple logo&lt;/title&gt;
+  &lt;desc id=“bolt-desc”&gt;A silhouette of an apple with a bite taken out of it&lt;/desc&gt;
+
+  ...
+
+&lt;/svg&gt;
 			    </code>
 			</pre>
-			<svg viewBox="0 0 23 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="bolt-title" aria-describedby="bolt-desc" role="img">
+			<svg viewBox="0 0 23 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="bolt-title" role="img">
 			    <title id="bolt-title">Electricity icon</title>
-			    <desc id="bolt-desc">A silhouette of a Lightning bolt</desc>
+			    <desc>A silhouette of a Lightning bolt</desc>
 			    <defs></defs>
 			    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-80.000000, -1193.000000)">
 			        <polygon fill="#ED0077" fill-rule="nonzero" points="84.5198404 1230 88.74 1212.96053 80 1212.96053 90.12 1193 99.32 1193 92.88 1205.65789 103 1205.65789"></polygon>
+			    </g>
+			</svg>
+
+			<svg viewBox="0 0 23 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-describedby="bolt-title" role="img">
+			    <title>Electricity icon</title>
+			    <desc id="bolt-desc">A silhouette of a Lightning bolt</desc>
+			    <defs></defs>
+			    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-80.000000, -1193.000000)">
+			        <polygon fill="#180048" fill-rule="nonzero" points="84.5198404 1230 88.74 1212.96053 80 1212.96053 90.12 1193 99.32 1193 92.88 1205.65789 103 1205.65789"></polygon>
 			    </g>
 			</svg>
 

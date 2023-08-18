@@ -55,6 +55,10 @@ img {
   max-width: 100%;
 }
 
+code {
+  white-space: pre-wrap;
+}
+
 .section__title {
   color: #180048;
   color: var(--primary-color);

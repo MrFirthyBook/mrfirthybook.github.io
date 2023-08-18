@@ -106,14 +106,16 @@
 			<pre class="nohighlight code">
 			    <code>
 &lt;picture&gt;
-  &lt;source srcset="night.jpg" media="(prefers-color-scheme: dark)"&gt;
-  &lt;img src="day.jpg"&gt;
+  &lt;source srcset="mojave-night.jpg" media="(prefers-color-scheme: dark)"&gt;
+  &lt;img src="mojave-day.jpg"&gt;
 &lt;/picture&gt;
 			    </code>
 			</pre>
+			<h4>Result</h4>
+			<p>The following image will display the Mojave dessert at night for those who prefer dark mode, and the exact same shot but during the day for those who don't or haven't specified.</p>
 			<picture>
-				<source srcset="night.jpg" media="(prefers-color-scheme: dark)">
-				<img src="day.jpg">
+				<source srcset="assets/mojave-night.jpg" media="(prefers-color-scheme: dark)">
+				<img src="assets/mojave-day.jpg" alt="A landscape picture of the mountains and sands of the Mojave dessert">
 			</picture>
 
 			<h3>Sprite icon:</h3>

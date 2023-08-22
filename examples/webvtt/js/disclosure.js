@@ -1,13 +1,13 @@
-let trigger = document.querySelector(".disclosure-widget .trigger"),
-    panel = document.querySelector(".disclosure-widget .trigger + .panel");
-
-trigger.addEventListener("click", function() {
-    if (this.getAttribute("aria-expanded") === "true" ) {
-        this.setAttribute("aria-expanded", "false");
-        panel.setAttribute("hidden", "");
-    }
-    else {
-        this.setAttribute("aria-expanded", "true");
-        panel.removeAttribute("hidden");
-    }
-});
+let $widget = $('.disclosure-widget .trigger');
+if($widget.length) {
+    $widget.on('click', function() {
+        let attr = $(this).attr('aria-expanded'),
+            panel = $(this).find('.trigger + .panel');
+        $(this).attr('aria-expanded', attr == 'true' ? 'false' : 'true');
+        if(attr == 'true') {
+            panel.removeAttr('hidden');
+        } else {
+            panel.attr('hidden');
+        }
+    });
+}

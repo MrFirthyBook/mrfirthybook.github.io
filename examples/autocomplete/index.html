@@ -45,69 +45,75 @@
 
 <main id="content" class="wrapper">
 	<section>
+		<p>Below are two autocomplete features for the same list of countries. The first is features 'strict' matching - it will return results that exactly match the series of letters entered. The second is 'fuzzy' searching, and is able to account for human error such as incorrect spelling, correct letters in the wrong order, and spelling a word phonetically. It can also interpret additional information to help the user find the result they may be looking for. In this case, it allows users to search by ISO country code as well as the counry itself.</p>
+		<section class="searches">
+			<article>
+				<h2>Strict search</h2>
+
+				<form>
+					<label for="strict-search">Search for a country:</label>
+					<input id="strict-search" autocomplete="off" placeholder="Country or dependent territory">
+				</form>
+
+				<hr>
+
+				<h3>Search examples that will return <code>Croatia</code>:</h3>
+				<ul>
+					<li>Cro (options appear after typing 3 letters)</li>
+					<li>Croatia</li>
+				</ul>
+
+				<hr>
+
+				<p>Created using the most used autocomplete on the web - <a href="https://jqueryui.com/autocomplete/" target="_blank">jQueryUI Autocomplete</a>.</p>
+				<p>This is easy to implement, but it can only return results that are spelt correctly, and so has no flexibility in returning results that are close to certain results.</p>
+			</article>
+
+			<article>
+				<h2>'Fuzzy' search</h2>
+
+				<form>
+					<label for="fuzzy-search">Search for a country or ISO code:</label>
+					<input name="country" id="fuzzy-search" autocomplete="off" placeholder="Country or dependent territory">
+				</form>
+
+				<hr>
+
+				<h3>Search examples that will return <code>Croatia</code>:</h3>
+				<ul>
+					<li>Cro (options appear after typing 3 letters)</li>
+					<li>Croatia</li>
+					<li>Croasha</li>
+					<li>HN (the country code)</li>
+					<li>crosha</li>
+					<li>Crowaysha</li>
+					<li>croaysha</li>
+				</ul>
+				<p>And many more I likely haven't thought of...</p>
+
+				<hr>
+			</article>
+		</section>
+
 		<h2>Why is this important?</h2>
 		<p>Autocomplete is the feature on many search boxes that guesses what you've started to type, in an effort to save user's time. However by default these components aren't great at accomodating for human error such as spelling errors or providing the correct letters but in the wrong order. This usually demands precision which can offset the time saved by implementing it, and even make the process longer.</p>
 
-		<p>Below is an example of this problem (that we'll call "strict search"), along with an alternative solution called "fuzzy search" which is more accomodating of these errors. Both are easy to implement, but it's clear to see which one holds the potential to help the most users.</p>
-
-		<h2>Strict search</h2>
-		<p>Created using the most used autocomplete on the web - <a href="https://jqueryui.com/autocomplete/" target="_blank">jQueryUI Autocomplete</a>.</p>
-		<p>This is easy to implement, but it can only return results that are spelt correctly, and so has no flexibility in returning results that are close to certain results.</p>
-
-		<h3>Search examples that will return <code>Croatia</code>:</h3>
-		<ul>
-			<li>Cro (options appear after typing 3 letters)</li>
-			<li>Croatia</li>
-		</ul>
-
-		<hr>
-
-		<form>
-			<label for="strict-search">Search for a country:</label>
-			<input id="strict-search" autocomplete="off" placeholder="Country or dependent territory">
-		</form>
-
-		<hr>
-
-		<h2>'Fuzzy' search</h2>
+		<h2>Fuzzy searching</h2>
 		<p>The nature of fuzzy searching is that it can search for results in a list in alternate ways, rather than relying solely on an exact match to what a user has inputted. This includes misspelt words, the correct letters but in the wrong order, or alternative spelling of a word (i.e. something that 'sounds' phonetically like the word).</p>
 
 		<p>Not only that, but fuzzy searching can take in associated or related information for each search result, rather than just the word. For example if a user is searching for a book, they may want to search by author, or ISBN - not just by title.</p>
 
-		<p>Below is an autocomplete for the same list of countries as above, but with a couple of differences - it allows for fuzzy searching, and is able to interpret additional information to help the user find the result they may be looking for. In this case, it allows users to search by ISO country code as well as the counry itself.</p>
-
-		<h3>Search examples that will return <code>Croatia</code>:</h3>
-		<ul>
-			<li>Cro (options appear after typing 3 letters)</li>
-			<li>Croatia</li>
-			<li>Croasha</li>
-			<li>HN (the country code)</li>
-			<li>crosha</li>
-			<li>Crowaysha</li>
-			<li>croaysha</li>
-		</ul>
-		<p>And many more I likely haven't thought of...</p>
-
-		<hr>
-
-		<form>
-			<label for="fuzzy-search">Search for a country or ISO code:</label>
-			<input name="country" id="fuzzy-search" autocomplete="off" placeholder="Country or dependent territory">
-		</form>
-
-		<hr>
-
-		<h2>Types of fuzzy searching</h2>
+		<h3>Types of fuzzy searching</h3>
 
 		<p>I didn't create the logic for this "fuzzy" searching, I'm merely showing the ways you can accomplish better searching to help users, with and without acccess needs, and provide examples of them so that you can easily recreate the behaviour and implement it into your own sites.</p>
 
-		<h3><a href="https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance" target="_blank">Jaro–Winkler distance algorithm</a> - Missplete</h3>
+		<h4><a href="https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">Jaro-Winkler distance algorithm</a></h4>
 
 		<p>This algorithm measures how many characters there are in common between the text that the user has entered and the list of possible autocomplete options. This combats the issue of human error where text is entered quickly but in the wrong order, but also takes into account the idea of a user incorrectly spelling a word through sounding it out but getting a fair amount of the letters correct. For example, Croatia is pronounced 'cro-ay-sha' which, despite being the incorrect spelling, has 5 of the 7 letter in common with the correct spelling.</p>
 
 		<p>This is the approach used in the above example, and the code was created by <a href="https://github.com/xavi" target="_blank">Xavi</a>, and for the purpose of this example all of the code has been compiled so it doesn't require webpack or NPM to run. However the full source code and installation instructions for missplete can be found <a href="https://github.com/xavi/miss-plete" target="_blank">in Xavi's Github repository</a> if you're interested.</p>
 
-		<h3>Levenshtein distance - Fuse</h3>
+		<h4><a href="https://fusejs.io/">Levenshtein distance</a></h4>
 
 		<p>The Levenshtein distance (also known as edit distance), is the minimum number of single-character edits (insertions, deletions or substitutions) required between two words to change one into the other. In this case, it compares what the user has entered against the list of possible options, and determines which it could get to with the fewest edits.</p>
 

@@ -84,7 +84,7 @@
 					<li>Cro (options appear after typing 3 letters)</li>
 					<li>Croatia</li>
 					<li>Croasha</li>
-					<li>HN (the country code)</li>
+					<li>HN (the country code for Croatia)</li>
 					<li>crosha</li>
 					<li>Crowaysha</li>
 					<li>croaysha</li>
@@ -108,12 +108,23 @@
 		<p>I didn't create the logic for this "fuzzy" searching, I'm merely showing the ways you can accomplish better searching to help users, with and without acccess needs, and provide examples of them so that you can easily recreate the behaviour and implement it into your own sites.</p>
 
 		<h4><a href="https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">Jaro-Winkler distance algorithm</a></h4>
+		<h5>Library examples</h5>
+		<ul>
+			<li><a href="https://typesense.org/">Typesense</a></li>
+			<li><a href="https://github.com/xavi/miss-plete">Missplete</a></li>
+			<li><a href="https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/">Algolia - Autocomplete</a></li>
+		</ul>
 
 		<p>This algorithm measures how many characters there are in common between the text that the user has entered and the list of possible autocomplete options. This combats the issue of human error where text is entered quickly but in the wrong order, but also takes into account the idea of a user incorrectly spelling a word through sounding it out but getting a fair amount of the letters correct. For example, Croatia is pronounced 'cro-ay-sha' which, despite being the incorrect spelling, has 5 of the 7 letter in common with the correct spelling.</p>
 
 		<p>This is the approach used in the above example, and the code was created by <a href="https://github.com/xavi" target="_blank">Xavi</a>, and for the purpose of this example all of the code has been compiled so it doesn't require webpack or NPM to run. However the full source code and installation instructions for missplete can be found <a href="https://github.com/xavi/miss-plete" target="_blank">in Xavi's Github repository</a> if you're interested.</p>
 
 		<h4><a href="https://fusejs.io/">Levenshtein distance</a></h4>
+		<h5>Library examples</h5>
+		<ul>
+			<li><a href="https://tarekraafat.github.io/autoComplete.js/#/">autoComplete.js</a></li>
+			<li><a href="https://fusejs.io/">Fuse JS</a></li>
+		</ul>
 
 		<p>The Levenshtein distance (also known as edit distance), is the minimum number of single-character edits (insertions, deletions or substitutions) required between two words to change one into the other. In this case, it compares what the user has entered against the list of possible options, and determines which it could get to with the fewest edits.</p>
 

@@ -316,6 +316,7 @@ nav {
 }
 
 .hero__title {
+  font-size: 2em;
   font-weight: 900;
   color: #180048;
   color: var(--primary-color);
@@ -431,4 +432,28 @@ nav {
     max-width: 100%;
     margin: 0;
   }
+}
+
+/* -----------------------------------------------------------------------------
+ * Utility classes
+ * -------------------------------------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }

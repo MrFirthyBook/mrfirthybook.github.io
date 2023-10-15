@@ -13,7 +13,7 @@
   --dark-gray-color: #444D56; 
   --bg-color: #F8F8FA;
   --code-bg-color: #F0E8E8;
-  --link-color: #a00001;
+  --link-color: #180048;
 }
 
 /* -----------------------------------------------------------------------------
@@ -318,6 +318,7 @@ nav {
 }
 
 .hero__title {
+  font-size: 2em;
   font-weight: 900;
   color: #180048;
   color: var(--primary-color);

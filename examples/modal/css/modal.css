@@ -2,6 +2,26 @@
  * Modals
  * -------------------------------------------------------------------------- */
 
+.modals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.modals .callout {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .modals {
+        flex-wrap: nowrap;
+    }
+
+    .modals .callout {
+        width: 45%;
+    }
+}
+
 .modal {
     position: fixed;
     top: 0;

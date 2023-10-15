@@ -105,7 +105,8 @@ img {
  * -------------------------------------------------------------------------- */
 .button--primary {
   display: inline-block;
-  padding: 10px 22px;
+  padding: 16px 32px;
+  font-size: 1.6rem;
   background-color: #180048;
   background-color: var(--primary-color);
   color: white;
@@ -117,6 +118,7 @@ img {
 @media screen and (max-width: 600px) {
   .button--primary {
     display: block;
+    width: 100%;
     padding: 24px 8px;
     text-align: center;
   }
@@ -379,11 +381,6 @@ nav {
 .callout {
   text-align: center;
   padding: 1rem 0 3rem 0;
-}
-
-.callout .button--primary {
-  display: inline-block;
-  margin-top: 0.5rem;
 }
 
 /* -----------------------------------------------------------------------------

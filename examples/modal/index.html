@@ -39,13 +39,14 @@
 				<code class="shell-session demo">Today's lesson: <span>Accessible modals</span></code>
 			</pre>
 	    </div>
+		<h2 class="sr-only">Accessible Modals</h2>
 	</header>
 
 	<main id="content" class="wrapper">
 		<section>
 			<hr>
 
-			<h2>How is it accessible?</h2>
+			<h3>How is it accessible?</h3>
 			<ul>
 				<li>An ARIA role of <code>dialog</code> is added to make it separate content from the rest of the web page for screen readers.</li>
 				<li>Toggle <code>aria-hidden</code> values between the modal and the content when it's active so that only one is accessible at one time.</li>
@@ -54,8 +55,8 @@
 				<li>Allows the modal to be closed using the <code>escape</code> key.</li>
 				<li>It remembers which button initiated the modal and returns focus to it when it's closed.</li>
 			</ul>
-			
-			<h2>Why is it important?</h2>
+
+			<h3>Why is it important?</h3>
 			<p>To provide proper functionality to allow keyboard-only users to navigate and interact with content that is placed on the page, either dynamically or through user action. Without this, these users are both unable to interact with the new content, whilst also not being able to interact with the content that they were interacting with before.</p>
 
 			<hr>
@@ -64,7 +65,7 @@
 		<section>
 			<div class="callout">
 				<p>Click on this button to see an accessible login modal!</p>
-				<button 
+				<button
 					class="button--primary js-modal-open"
 					data-target="modal-login"
 					type="button"
@@ -76,7 +77,7 @@
 
 			<div class="callout">
 				<p>Click on this button to see an accessible text modal!</p>
-				<button 
+				<button
 					class="button--primary js-modal-open"
 					data-target="modal-text"
 					type="button"

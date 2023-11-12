@@ -346,6 +346,7 @@ nav {
 .hero__terminal pre {
   margin: 0;
   font-size: 24px;
+  line-height: 36px;
   text-align: center;
   white-space: pre-line;
 }

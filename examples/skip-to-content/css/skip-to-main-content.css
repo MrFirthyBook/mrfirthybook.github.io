@@ -1,4 +1,4 @@
-#skip-to-main-content {
+.skip-to-main-content {
   padding: 1em;
   position: absolute;
   top: -4000px;
@@ -7,7 +7,7 @@
   color: white;
 }
 
-#skip-to-main-content:focus {
+.skip-to-main-content:focus {
   position: absolute;
   top: 0;
   background: #52368C;

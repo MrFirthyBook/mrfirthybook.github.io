@@ -245,8 +245,14 @@ li {
     position: absolute;
     top: 2px;
     right: 8px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: inline-block;
     padding: 1.0rem 0;
+  }
+
+  .menu__item.toggle:hover {
+    cursor: pointer;
   }
 
   .menu {

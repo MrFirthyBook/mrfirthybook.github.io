@@ -34,8 +34,8 @@ body {
 	--color-bg-facts: #000;
 	--color-text-facts: #fff;
 	--color-bg-img: #000;
-	--color-bg-more-1: #fee9b1;
-	--color-bg-more-2: #e0f3ca;
+	--color-bg-more-1: #fffadd;
+	--color-bg-more-2: #fe5471;
 	--color-bg-more-3: #f3cae8;
 	--color-bg-more-4: #cacaf3;
 	--color-nav: #ddd;
@@ -183,7 +183,7 @@ button {
 }
 
 .section__title a {
-	color: #d16b3f;
+	color: #2f2347;
 }
 
 .section__title a span {
@@ -196,7 +196,7 @@ button {
 
 .section__title a:hover span,
 .section__title a:focus span {
-	border-color: #d16b3f;
+	border-color: #2f2347;
 }
 
 @media screen and (min-width: 880px) and (max-width: 935px) {

@@ -239,7 +239,9 @@
 			window.addEventListener('resize', debounce(() => this.onResize(), 20));
 		}
 		navigate(direction) {
-			if ( this.isEntriesAnimating || this.isFactsAnimating ) return;
+			if ( this.isEntriesAnimating || this.isFactsAnimating ) {
+				return;
+			}
 			this.isEntriesAnimating = true;
 			// Store direction
 			this.direction = direction;
@@ -282,7 +284,9 @@
 			});
 		}
 		closePreview() {
-			if ( this.isFactsAnimating ) { return };
+			if ( this.isFactsAnimating ) {
+				return;
+			};
 			this.isFactsAnimating = true;
 
 			Promise.all([

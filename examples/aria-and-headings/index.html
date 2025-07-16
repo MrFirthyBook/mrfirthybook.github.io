@@ -37,7 +37,7 @@
     <div class="hero">
 		<p class="hero__title">Practical Web Accessibility</p>
 		<p class="hero__description">A practical example for the <a href="https://inclusive.guide">Second Edition</a> by <a href="https://mrfirthy.me">Ashley Firth</a></p>
-		<h1 class="sr-only">Practical Example: ARIA & Headings</h1>
+		<h2 class="sr-only">Practical Example: ARIA & Headings</h2>
     </div>
     <div class="hero__terminal" aria-hidden="true">
 		<pre>
@@ -48,7 +48,7 @@
 
 <main class="wrapper" id="content">
 	<section>
-		<h2>Status message using <code class="code code--inline">aria-live</code></h2>
+		<p style="font-size: 1.5em; font-weight: bold;">Status message using <code class="code code--inline">aria-live</code></p>
 		<p>In this example, we randomly update the status of the text below (the cost of a coffee in Soho) to a number between 1 and 1,000 every 30 seconds.</p>
 		<p>With the <code class="code code--inline">aria-live</code> role on the parent element, a screen reader will notify the user each time it changes, even if they're reading other content.</p>
 		<p>Of course you wouldn't use <code class="code code--inline">aria-live</code> in this way as it is far too intrusive, but it acts as a good example of how you can inform screen reader users of a change in status or the result of an action, even whilst they're browsing.</p>
@@ -89,7 +89,7 @@
 	</section>
 
 	<section>
-		<h2>Section heading</h2>
+		<h3>Section heading</h3>
 		<p>This is text following a heading. That title gives this text proper context.</p>
 	</section>
 
@@ -105,7 +105,7 @@
 
 		<div class="nohighlight code">
 			<div class="field">
-				<h3>Custom checkbox</h3>
+				<h4>Custom checkbox</h4>
 				<span
 					role="checkbox"
 					aria-checked="false"
